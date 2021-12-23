@@ -137,6 +137,7 @@
             this.btnDivision.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnDivision.TabIndex = 12;
             this.btnDivision.TabStop = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // btnMultiplicacion
             // 
@@ -147,6 +148,7 @@
             this.btnMultiplicacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMultiplicacion.TabIndex = 11;
             this.btnMultiplicacion.TabStop = false;
+            this.btnMultiplicacion.Click += new System.EventHandler(this.btnMultiplicacion_Click);
             // 
             // btnResta
             // 
@@ -157,6 +159,7 @@
             this.btnResta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnResta.TabIndex = 10;
             this.btnResta.TabStop = false;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
             // 
             // btnSuma
             // 
@@ -167,6 +170,7 @@
             this.btnSuma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnSuma.TabIndex = 9;
             this.btnSuma.TabStop = false;
+            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
             // 
             // btnSalir
             // 

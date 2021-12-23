@@ -16,6 +16,8 @@ namespace Calculadora_simple
             InitializeComponent();
         }
 
+        Operaciones objOperaciones = new Operaciones();
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             DialogResult resultado = MessageBox.Show("¿Desea cerrar el sistema?", "CONFIRMAR", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -52,6 +54,54 @@ namespace Calculadora_simple
         private void txtLet_KeyPress(object sender, KeyPressEventArgs e)
         {
             Libreria_validacion.Validar.SoloLetras(e);
+        }
+
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+            if (txtNum1.Text.Length > 0 && txtNum2.Text.Length > 0)
+            {
+                lblRes.Text = "Resultado: " + objOperaciones.Sumar(double.Parse(txtNum1.Text), double.Parse(txtNum2.Text));
+            }
+            else
+            {
+                MessageBox.Show("No hay datos para operar.", "Ingrese la información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnResta_Click(object sender, EventArgs e)
+        {
+            if (txtNum1.Text.Length > 0 && txtNum2.Text.Length > 0)
+            {
+                lblRes.Text = "Resultado: " + objOperaciones.Restar(double.Parse(txtNum1.Text), double.Parse(txtNum2.Text));
+            }
+            else
+            {
+                MessageBox.Show("No hay datos para operar.", "Ingrese la información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnMultiplicacion_Click(object sender, EventArgs e)
+        {
+            if (txtNum1.Text.Length > 0 && txtNum2.Text.Length > 0)
+            {
+                lblRes.Text = "Resultado: " + objOperaciones.Multiplicar(double.Parse(txtNum1.Text), double.Parse(txtNum2.Text));
+            }
+            else
+            {
+                MessageBox.Show("No hay datos para operar.", "Ingrese la información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnDivision_Click(object sender, EventArgs e)
+        {
+            if (txtNum1.Text.Length > 0 && txtNum2.Text.Length > 0)
+            {
+                lblRes.Text = "Resultado: " + objOperaciones.Dividir(double.Parse(txtNum1.Text), double.Parse(txtNum2.Text));
+            }
+            else
+            {
+                MessageBox.Show("No hay datos para operar.", "Ingrese la información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
