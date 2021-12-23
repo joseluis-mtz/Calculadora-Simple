@@ -103,5 +103,53 @@ namespace Calculadora_simple
                 MessageBox.Show("No hay datos para operar.", "Ingrese la información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnSuma_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnSuma.Width = 55;
+            btnSuma.Height = 55;
+        }
+
+        private void btnSuma_MouseLeave(object sender, EventArgs e)
+        {
+            btnSuma.Width = 50;
+            btnSuma.Height = 50;
+        }
+
+        private void btnResta_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnResta.Width = 55;
+            btnResta.Height = 55;
+        }
+
+        private void btnResta_MouseLeave(object sender, EventArgs e)
+        {
+            btnResta.Width = 50;
+            btnResta.Height = 50;
+        }
+
+        private void btnMultiplicacion_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnMultiplicacion.Width = 55;
+            btnMultiplicacion.Height = 55;
+        }
+
+        private void btnMultiplicacion_MouseLeave(object sender, EventArgs e)
+        {
+            btnMultiplicacion.Width = 50;
+            btnMultiplicacion.Height = 50;
+        }
+
+        private void btnDivision_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnDivision.Width = 55;
+            btnDivision.Height = 55;
+        }
+
+        private void btnDivision_MouseLeave(object sender, EventArgs e)
+        {
+            btnDivision.Width = 50;
+            btnDivision.Height = 50;
+        }
     }
 }

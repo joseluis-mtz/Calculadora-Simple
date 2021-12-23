@@ -138,6 +138,8 @@
             this.btnDivision.TabIndex = 12;
             this.btnDivision.TabStop = false;
             this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            this.btnDivision.MouseLeave += new System.EventHandler(this.btnDivision_MouseLeave);
+            this.btnDivision.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnDivision_MouseMove);
             // 
             // btnMultiplicacion
             // 
@@ -149,6 +151,8 @@
             this.btnMultiplicacion.TabIndex = 11;
             this.btnMultiplicacion.TabStop = false;
             this.btnMultiplicacion.Click += new System.EventHandler(this.btnMultiplicacion_Click);
+            this.btnMultiplicacion.MouseLeave += new System.EventHandler(this.btnMultiplicacion_MouseLeave);
+            this.btnMultiplicacion.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnMultiplicacion_MouseMove);
             // 
             // btnResta
             // 
@@ -160,6 +164,8 @@
             this.btnResta.TabIndex = 10;
             this.btnResta.TabStop = false;
             this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            this.btnResta.MouseLeave += new System.EventHandler(this.btnResta_MouseLeave);
+            this.btnResta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnResta_MouseMove);
             // 
             // btnSuma
             // 
@@ -171,6 +177,8 @@
             this.btnSuma.TabIndex = 9;
             this.btnSuma.TabStop = false;
             this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
+            this.btnSuma.MouseLeave += new System.EventHandler(this.btnSuma_MouseLeave);
+            this.btnSuma.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnSuma_MouseMove);
             // 
             // btnSalir
             // 
