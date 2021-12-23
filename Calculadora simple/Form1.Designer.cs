@@ -35,13 +35,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblRes = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtLet = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnDivision = new System.Windows.Forms.PictureBox();
             this.btnMultiplicacion = new System.Windows.Forms.PictureBox();
             this.btnResta = new System.Windows.Forms.PictureBox();
             this.btnSuma = new System.Windows.Forms.PictureBox();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.txtLet = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDivision)).BeginInit();
@@ -128,6 +128,37 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Operaciones Disponibles";
             // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(396, 260);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(90, 36);
+            this.btnSalir.TabIndex = 14;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // txtLet
+            // 
+            this.txtLet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLet.Location = new System.Drawing.Point(124, 265);
+            this.txtLet.Name = "txtLet";
+            this.txtLet.Size = new System.Drawing.Size(183, 26);
+            this.txtLet.TabIndex = 16;
+            this.txtLet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLet_KeyPress);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 268);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Solo letras:";
+            // 
             // btnDivision
             // 
             this.btnDivision.Image = global::Calculadora_simple.Properties.Resources.entre;
@@ -180,37 +211,6 @@
             this.btnSuma.MouseLeave += new System.EventHandler(this.btnSuma_MouseLeave);
             this.btnSuma.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnSuma_MouseMove);
             // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(396, 260);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(90, 36);
-            this.btnSalir.TabIndex = 14;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // txtLet
-            // 
-            this.txtLet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLet.Location = new System.Drawing.Point(124, 265);
-            this.txtLet.Name = "txtLet";
-            this.txtLet.Size = new System.Drawing.Size(183, 26);
-            this.txtLet.TabIndex = 16;
-            this.txtLet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLet_KeyPress);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 268);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Solo letras:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +224,7 @@
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora-Simple";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
