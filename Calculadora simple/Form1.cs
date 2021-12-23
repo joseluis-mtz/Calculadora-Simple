@@ -28,5 +28,30 @@ namespace Calculadora_simple
 
             }
         }
+
+        private void txtNum1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumeros(e);
+            if (e.KeyChar == (char)13)
+            {
+                e.Handled = true;
+                SendKeys.Send(("{TAB}"));
+            }
+        }
+
+        private void txtNum2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloNumeros(e);
+            if (e.KeyChar == (char)13)
+            {
+                e.Handled = true;
+                SendKeys.Send(("{TAB}"));
+            }
+        }
+
+        private void txtLet_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Libreria_validacion.Validar.SoloLetras(e);
+        }
     }
 }
