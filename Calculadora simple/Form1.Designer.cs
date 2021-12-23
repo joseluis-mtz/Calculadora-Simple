@@ -176,6 +176,7 @@
             this.btnSalir.TabIndex = 14;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtLet
             // 
